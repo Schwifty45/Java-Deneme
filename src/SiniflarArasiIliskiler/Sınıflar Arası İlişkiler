@@ -1,0 +1,4 @@
+ Sınıflar arası ilişkiler
+Dependency (Bağımlılık) 'uses a' [A uses B]
+Composition (Birleştirme) 'has a' []
+Inheritance (Kalıtım) 'is a' []

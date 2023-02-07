@@ -1,0 +1,11 @@
+Kalıtım (inheritance) nesne yönelimli programlama paradigmalarından biridir ve aşağıdaki özellikleri içerir:
+
+    Alt sınıf (subclass), üst sınıfın (superclass) özelliklerini ve davranışlarını miras alır.
+    Hiyerarşik sınıflandırmalar yaratılabilir ve bu sayede sınıflar birbirlerine üst-alt ilişkisiyle bağlanabilirler.
+    Alt sınıflar, üst sınıfta tanımlanan metodları, değişkenleri ve diğer özellikleri kullanabilirler.
+    Alt sınıflar, üst sınıftan miras aldıkları özellikleri değiştirebilir, bu sayede kendilerine özgü işlevler ekleyebilirler.
+    Kalıtım sayesinde birtakım ortak özellikler belirli bir yerde gruplanabilir ve sınıflar arasında kod tekrarı önlenerek kodun yeniden kullanılabilirliği arttırılabilir.
+    Polimorfizm ve abstraksiyon gibi nesne yönelimli programlama kavramları da kalıtım sayesinde uygulanabilir.
+
+
+

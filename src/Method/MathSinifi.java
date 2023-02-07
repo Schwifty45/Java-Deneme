@@ -2,6 +2,7 @@ package Method;
 public class MathSinifi {
     public static void main(String[] args) {
         // Math sınıfı metotları
+
         // Math.ceil(x) => bir büyük tam sayıya yuvarlama yapar.
         // Math.cos(x) => cos değerini döner
         // Math.sin(x) => sin değerini döner
@@ -11,6 +12,8 @@ public class MathSinifi {
         // Math.pow(3,5) => 3^5 üs alır
         // Math.random() => 1 ve arasında rastegele değer
         // Math.round(x) => yakın olan tam sayıya döner
+        //Math.sqrt (x) => karesini alır
+
     //System.out.println(Math.ceil(1.1));
     //System.out.println(Math.pow(2,3));
 
