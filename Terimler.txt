@@ -1,0 +1,86 @@
+------------------primitive data types------------------------------------
+byte, short, int, long, float, double, boolean and char.
+---------------------------------------------------------------------------
+
+-----------------Data typelar arası geçiş---------------------------------
+ double myDouble = 9.78d;
+ int myInt = (int) myDouble;
+ --------------------------------------------------------------------------
+
+---------------Java Önemli Terimler--------------------------------------
+Encapsulation (Sarmallama, Kapsülleme) / Bir sınıfın içindeki veri ve işlevleri saklama ve koruma prensibidir. Verilerin private, public veya protected gibi erişim belirleyicileri ile kapsüllenmesini sağlar.
+Inheritance (Kalıtım) / İki farklı class inner clas ile farkı kalıtım farklı iki class ta olması.
+Polymorphism (Çok Biçimlilik) / Bir nesnenin farklı sınıflara ait olabilmesi ve farklı şekillerde kullanılabilmesi.
+Abstraction (Soyutlama)
+
+---------------------------------------------------------------------------
+
+-------------------Sınıflar arası ilişkiler-----------------------------------
+Dependency (Bağımlılık) 'uses a'
+Composition (Birleştirme) 'has a'
+Inheritance (Kalıtım) 'is a'
+------------------------------------------------
+
+--------------------------Class Structures--------------------------------
+-Nested Class (İç içe Sınıflar)
+1. Inner Class (İç Sınıflar) / Aynı class içinde iki class
+   1.1. Static (Statik tanımlandığı zaman nesne üretmeden o sınıftaki methoda veya sınıfa erişebilinir.)
+   1.2. Non-Static ()
+2. Local Class (Yerel Sınıflar)
+3. Anonymous Class (Anonim Sınıflar)
+---------------------------------------------------------------------------
+
+--------------------------------Collection--------------------------------
+->Collection(element adı verilen objelerin[nesnelerin] gruplar halinde temsil eden bir yapı.
+1.Set(Tekrarlanan veriye izin verilmez.)
+    1.1.HashSet: sıralama karışıktır.
+    1.2.LinkedSet: Listeli olarak hafızada saklanır. İlk girilen değer ilk çıkar.
+    1.3.TreeSet:  İnt olarak girilen değerler küçükten büyüğe doğru sıralanır. Küçük olan sayı ilk çıkar. String Türünde karışıktır. Diğer set collectionların aksine karışık veri tutulmaz.
+2.List (Tekrarlanan veriye izin verilir. Arrayların geliişmiş hali.)
+    2.1.ArrayList: Ençok kullanılan list. (0, "Something") ile 1. elemanı atayabilirsin. Arama algoritmasında O(1) hızlı. Sık sık arama yapılacaksa kullanımı, linkedlistten daha mantıklı.
+    2.2.LinkedList:(Queue ve List interface in ortak kullanım). Arama Algoritmasında O(n) hızlı. Bir eleman silinecekse veya eklenecekse LinkedList, Array liste göre daha performanslı.
+    2.3.Vector: Vector isim = new Vector(3[başlangıç kapasitesi belirtir], 6[kapasite aşıldığında kaçar kaçar arttığı belirtilir.]
+3.Queue (Ekleme yapmak istediğimizde ara ekleme yapılamıyor.) LinkedList ile önce girilen önce çıkar ve sıra bozulmaz. Priority de ise sıralama özelleştirilebilir(Doktor sırası gibi. Yaşlılar araya kaynak yapabilir.)
+    3.1.LinkedList: Queue list = new LinkedList(); şeklinde queue ya ait olduğu belirtilir.
+    3.2.PriorityQueue:
+---------------------------------------------------------------------------
+
+--------------------Map--------------------------------------------------
+-> Map: Indexler 0,1,2,... yerine String değer girilebilir. Ancak aynı index(adresten) iki tane olamaz.
+1.HashMap:
+2.LinkedHashMap: Sıralama oluşurulur.
+3.ThreeMap: Sıralama oluşturulur ancak linkedhashmap ten farklı olarak oluşan sıralama özelleştirilebilir.
+---------------------------------------------------------------------------
+
+-----------------------------Generic--------------------------------------
+Generic: Arraylist<Int> tarzında yazılıyor.
+ public static <E> void main(E[] args) şeklide method oluşturulabilir.
+---------------------------------------------------------------------------
+
+---------------------------Thread-----------------------------------------
+Thread= Aynı anda birden fazla işlemi yürütmeyi sağlayan bir özelliktir. Thread ler collections lar gibi bir sınıf.
+Thread(new Runnable()) thread lerini içine runnable ile üretilmiş interface atanmalı.
+---------------------------------------------------------------------------
+
+-------------------------File----------------------------------------------
+BufferedWriter işlem hızlandırır. (Yazımın bitmesi için kapanması lazım)
+FileWriter ile dosyasının yazılabilip veya okunabilir olup olmadığını sorgulamada işimize yarar.
+---------------------------------------------------------------------------
+
+-------------ternary operator (if else)------------------------------------
+variable = Expiration1 ? Expiration2 : Expiration3
+Expiration1 = Expiration2 = true çıktı variable = Expiration2
+Expiration1 = Expiration3 = false çıktı variable = Expiration3
+
+ int time = 20;
+  String result = (time < 18) ? "Good day." : "Good evening.";
+  System.out.println(result);
+
+        çıktı "Good evening." olur
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+protected
+public
+private
+---------------------------------------------------------------------------
