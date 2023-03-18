@@ -21,6 +21,9 @@ public class JTextAreaKullanimi {
 
         area = new JTextArea();
         area.setBounds(30,50,195,150);
+        area.setLineWrap(true); //kelime sınırını aşarsanız otomatik olarak satır atlama işlemini gerçekleştirir.
+        area.setWrapStyleWord(true);//otomatik satır atlama işlemini kelime sınırında gerçekleştirir.
+        //area.setEditable(false); // bileşeninin düzenlenemez hale getirir.
 
         while (area.getText().isEmpty()) {
             area.append("Yazınız.");
@@ -58,7 +61,7 @@ public class JTextAreaKullanimi {
             @Override
             public void keyPressed(KeyEvent e) {
                 area.setText(" "); // TextArea'yı temizle
-                area.removeKeyListener(this); // KeyListener'ı kaldır
+                area.removeKeyListener(this); // KeyListener'ı kaldır. Kaldırılmadığı durumda sadece bir harf yazılabilir.
             }
         });
 
