@@ -69,7 +69,8 @@ public class JTextAreaKullanimi {
         f.add(l2);
         f.add(area);
         f.add(bttn);
-        f.setSize (400, 400);
+        f.setLocationRelativeTo(null);
+        f.setSize (800, 600);
         f.setLayout (null);
         f.setVisible(true);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
