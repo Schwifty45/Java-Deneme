@@ -33,5 +33,8 @@ public class Arrays {
         // Son boyutun 3. alt dizisi, 3. eleman, 3. alt dizi, 1. elemanı
         int element3 = threeDimArray[2][2][0]; // 17
         System.out.println("element3 = " + element3);
+        // Son boyutun 4. alt dizisi, 3. eleman, 3. alt dizi, 1. elemanı
+        int element4 = threeDimArray[4][1][3]; // 31
+        System.out.println("element4 = " + element4);
     }
 }
