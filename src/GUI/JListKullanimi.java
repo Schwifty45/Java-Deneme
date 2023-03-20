@@ -35,21 +35,21 @@ public class JListKullanimi {
         JList<String> liste2 = new JList<>(l2);
         liste2.setBounds(100,200,75,75);
 
-        btn1 = new JButton();
+        btn1 = new JButton("Seçimi Göster");
         btn1.setBounds(100,200,75,75);
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                lbl1.setText("");
             }
         });
 
-        btn2 = new JButton();
+        btn2 = new JButton("Show Selected");
         btn2.setBounds(100,200,75,75);
         btn2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                lbl2.setText("");
             }
         });
 
