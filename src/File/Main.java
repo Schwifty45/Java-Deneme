@@ -5,8 +5,8 @@ import java.io.*;
 import java.util.Random;
 
 public class Main {
-        private static final String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        private static final int PASSPORT_LENGTH = 8;
+        private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/!?*-_.";
+        private static final int PASSPORT_LENGTH = 30;
     public static String generatePassport() {
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
