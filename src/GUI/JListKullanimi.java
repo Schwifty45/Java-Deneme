@@ -12,10 +12,10 @@ public class JListKullanimi {
         JLabel lbl1,lbl2;
 
         lbl1 = new JLabel();
-        lbl1.setBounds(150,30,100,100);
+        lbl1.setBounds(150,30,200,100);
 
         lbl2 = new JLabel();
-        lbl2.setBounds(150,200,100,100);
+        lbl2.setBounds(150,200,200,100);
 
         DefaultListModel<String > l1 = new DefaultListModel<>();
         l1.addElement("Kuzey");
@@ -24,6 +24,7 @@ public class JListKullanimi {
         l1.addElement("Doğu");
 
         JList<String> liste1 = new JList<>(l1);
+        liste1.setSelectionMode(DefaultListSelectionModel.SINGLE_SELECTION); // Liste içinden tekbir seçim yapılabilir.
         liste1.setBounds(30,30,100,150);
 
         DefaultListModel<String> l2 = new DefaultListModel<>();
@@ -40,7 +41,10 @@ public class JListKullanimi {
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbl1.setText("lbl1");
+                if (liste1.getSelectedIndex() !=-1) // -1 ise birşey seçilmemiştir anlamı taşır.
+                {
+                lbl1.setText("Seçilen Yön: "+ liste1.getSelectedValue());
+            }
             }
         });
 
@@ -49,7 +53,9 @@ public class JListKullanimi {
         btn2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbl2.setText("lbl2");
+                if (liste2.getSelectedIndex() != -1){
+                    lbl2.setText("Selected Direction: "+ liste2.getSelectedValuesList());
+                }
             }
         });
 
